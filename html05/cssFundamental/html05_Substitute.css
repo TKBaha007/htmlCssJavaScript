@@ -90,7 +90,7 @@ p {
   color: red;
 }
 
-/* The green color won because #test has the highest specificity: an ID selector beats a class selector and an element selector. */
+/* I pretty sure the green color won because #test has the highest specificity: an ID selector beats a class selector and an element selector. */
 
 /* Step 13: footer p */
 footer p {
