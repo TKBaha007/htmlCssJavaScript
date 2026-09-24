@@ -1,0 +1,40 @@
+highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+#footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  color: blue;
+  font-size: 32px;
+}
+
+p {
+  color: #333333;
+  font-size: 16px;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+#footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+ head{
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Styled Page</title>
+  <link rel="stylesheet" href="styles.css">
+}
