@@ -22,8 +22,18 @@
             #special  ->  color: red;   font-weight: bold;
 
        Rules 2 and 3 won't do anything until you finish TODO 3 and TODO 4.
-  -->   <h1 style="color: green; font-size: 24px;">hi</h1>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+     -->
+          <style>
+               /* Element selector */
+               h2 { color: green; font-size: 24px; }
+               /* Class selector */
+               .intro { background-color: lightyellow; padding: 10px; }
+               /* ID selector */
+               #special { color: red; font-weight: bold; }
+               /* For TODO 5: h1 set via stylesheet */
+               h1 { color: orange; }
+          </style>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Rubik+Glitch&family=Science+Gothic:wght@100..900&family=Tapestry&display=swap" rel="stylesheet">
 </head>
@@ -34,7 +44,7 @@
        Use: style="color: blue;"
        Save and refresh. Only this one heading turns blue.
   -->
-  <h1>Inline and Internal CSS Practice</h1>
+     <h1>Inline and Internal CSS Practice</h1>
 
   <p>This page practices two ways to add CSS: inline styles and an internal stylesheet.
      The third way, an external stylesheet, is in the 05b task.</p>
@@ -52,8 +62,8 @@
     <!-- Task: Add class="intro" to BOTH paragraphs below.
          Save and refresh. Both get the same yellow background from one rule.
     -->
-    <p>A class selector starts with a dot, like <code>.intro</code>.</p>
-    <p>One class can be used on as many tags as you want. This paragraph uses the same class as the one above.</p>
+     <p class="intro">A class selector starts with a dot, like <code>.intro</code>.</p>
+     <p class="intro">One class can be used on as many tags as you want. This paragraph uses the same class as the one above.</p>
   </section>
 
   <section>
@@ -63,7 +73,7 @@
     <!-- Task: Add id="special" to the div below.
          Save and refresh. The text turns red and bold.
     -->
-    <div>An ID selector starts with a hash, like <code>#special</code>. An id can only be used on one tag per page.</div>
+     <div id="special">An ID selector starts with a hash, like <code>#special</code>. An id can only be used on one tag per page.</div>
   </section>
 
   <!-- ===== TODO 5: Which one wins? ===== -->
