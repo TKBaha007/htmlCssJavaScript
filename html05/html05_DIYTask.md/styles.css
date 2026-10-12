@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tapestry:wght@400;500;600;700&display=swap');
+
+h1 {                  /* selector */
+  color: rgb(0, 0, 0);        /* property: value; */
+  text-align: center;
+  font-family: 'Tapestry', cursive;
+}header {
+  position: sticky;
+  top: 0;                      
+  z-index: 10;                  
+  background-color: #000000;    
+  color: rgb(247, 4, 4);
+  padding: 1rem;
+}
+header h1 {
+  margin: 0;
+}
+    
+.card {
+  display: inline-block;       
+  vertical-align: top;          
+  width: 15rem;                
+}
+
+nav a {
+  display: inline-block;        
+  padding: 0.5rem 1rem;         
+  margin-right: 0.5rem;        
+  background-color: #000000;    
+  color: rgb(255, 0, 0);                
+  text-decoration: none;        
+  border-radius: 4px;          
+}
+
+
+.hidden {
+  display: none;                
+}
+    .has-badge {
+  position: relative;          
+}
+.badge {
+  position: absolute;           
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #000000;
+  color: rgb(253, 0, 0);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+    
+    body {
+      font-family: 'Tapestry', Arial, sans-serif;
+      margin: 0;                  /* remove the browser's default space around the page */
+      background-color: #ffffff;
+    }
+  .to-top{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255);
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+main {
+  max-width: 50rem;    
+  margin: 0 auto;  
+   padding: 1rem;    
+}
+/* ===== Header ===== */
+header {
+  background-color: #960202;           /* accent color behind the site name */
+  color: #ffffff;                      /* white text */
+  text-align: center;
+}
+
+/* ===== Nav links (header and footer) ===== */
+nav a {
+  color: #750101;                      /* light color that shows up on the dark header and footer */
+  font-weight: bold;
+  text-decoration: none;               /* removes the underline */
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #af0404;           /* same as the header so the page looks finished */
+  color: #ffffff;
+  font-size: 0.875rem;                 /* 14px, a little smaller */
+  text-align: center;
+}
+.note {
+  font-style: italic;
+  text-align: center;
+}

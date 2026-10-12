@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Practice</title>
+  <style>
+    
+      header {
+  position: sticky;
+  top: 0;                      
+  z-index: 10;                  
+  background-color: #0d2a4a;    
+  color: white;
+  padding: 1rem;
+}
+header h1 {
+  margin: 0;
+}
+    
+.card {
+  display: inline-block;       
+  vertical-align: top;          
+  width: 15rem;                
+}
+
+nav a {
+  display: inline-block;        
+  padding: 0.5rem 1rem;         
+  margin-right: 0.5rem;        
+  background-color: #1565c0;    
+  color: white;                
+  text-decoration: none;        
+  border-radius: 4px;          
+}
+
+
+.hidden {
+  display: none;                
+}
+    .has-badge {
+  position: relative;          
+}
+.badge {
+  position: absolute;           
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #ff9800;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;                  /* remove the browser's default space around the page */
+      background-color: #eeeeee;
+    }
+  .to-top{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: blue ;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+main {
+  max-width: 50rem;    
+  margin: 0 auto;  
+   padding: 1rem;    
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Box Model Practice</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+   
+    <div class="card">
+      <h2>Card One</h2>
+      <p>A card is a box with a heading and some text.</p>
+    </div>
+    <div class="card">
+      <h2>Card Two</h2>
+      <p>We will use cards to learn padding, border, and margin.</p>
+    </div>
+    <div class="card has-badge">
+  <span class="badge">NEW</span>
+  <h2>Card Three</h2>
+  <p>This card has a badge.</p>
+</div>
+  </main>
+
+<a href="#" class="to-top">Back to top</a>
+</body>
+</html>
