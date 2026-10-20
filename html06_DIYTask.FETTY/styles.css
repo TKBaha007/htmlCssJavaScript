@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry:wght@400;500;600;700&display=swap');
+
+
+
+/* Width and height include padding and border */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/other roster.jpg') no-repeat center center / cover fixed;
+  opacity: 0.2; 
+  z-index: -1; 
+  
+}
+h1 {                 
+  color: rgb(0, 0, 0);        
+  text-align: center;
+  font-family: 'Tapestry', cursive;
+  
+}header {
+  position: sticky;
+  top: 0;                      
+  z-index: 10;                  
+  background-color: #000000;    
+  color: rgb(247, 4, 4);
+  padding: 1rem;
+}
+header h1 {
+  margin: 0;
+}
+    
+    
+
+
+.card {
+  display: inline-block;       
+  vertical-align: top;          
+  width: 15rem;   
+  position: relative;
+   background: url('images/liverpool_bird.png') no-repeat center center / cover fixed;             
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  background-color: #000000;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: rgb(255, 0, 0);
+  color: #000000;
+}
+
+.hidden {
+  display: none;                
+}
+    .has-badge {
+  position: relative;          
+}
+.badge {
+  position: absolute;           
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #000000;
+  color: rgb(253, 0, 0);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+    
+    body {
+      font-family: 'Tapestry', Arial, sans-serif;
+      margin: 0;                  
+      background-color: #ffffff;
+    }
+  .to-top{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255);
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+th, td {
+  padding: 0.5rem 1rem;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #960202;           
+  color: #ffffff;                      
+  text-align: center;
+}
+
+/* ===== Nav links (header and footer) ===== */
+nav a {
+  color: #750101;                      
+  font-weight: bold;
+  text-decoration: none;               
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #af0404;           
+  color: #ffffff;
+  font-size: 0.875rem;                 
+  text-align: center;
+}
+.note {
+  font-style: italic;
+  text-align: center;
+}
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+figure {
+  display: inline-block;
+  width: 15rem;
+  margin: 0.75rem;
+  padding: 0.75rem;
+  background-color: white;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  vertical-align: top;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+figure:hover {
+  border-color: #960202;
+  background-color: #f9f1f1;
+  transform: translateY(-2px);
+}
+
+.page-layout section {
+  background-color: #fd0707;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #000000;
+}
+
