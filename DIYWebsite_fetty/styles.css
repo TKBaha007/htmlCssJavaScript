@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tapestry:wght@400;500;600;700&display=swap');
 
-
-
-/* Width and height include padding and border */
 * {
   box-sizing: border-box;
 }
@@ -37,6 +34,10 @@ h1 {
   background-color: #000000;    
   color: rgb(247, 4, 4);
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   padding: 1rem 2rem;
 }
 header h1 {
   margin: 0;
@@ -124,12 +125,15 @@ th, td {
   padding: 0.5rem 1rem;
 }
 
-/* ===== Header ===== */
+
 header {
   background-color: #960202;           
   color: #ffffff;                      
   text-align: center;
 }
+header nav {
+  display: flex;
+  gap: 1rem;}
 
 /* ===== Nav links (header and footer) ===== */
 nav a {
@@ -149,11 +153,29 @@ footer {
   font-style: italic;
   text-align: center;
 }
+.gallery,
 .pictures {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.5rem;
+}
+
+.gallery figure,
+.pictures figure {
+  flex: 1;
+  min-width: 15rem;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;   
+  height: auto;     
+  display: block;
+}    
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 figure {
@@ -189,3 +211,20 @@ figure:hover {
   color: #000000;
 }
 
+/* ===== Phones: 768px wide and narrower ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery,
+  .pictures {
+    flex-direction: column;
+  }
+}
